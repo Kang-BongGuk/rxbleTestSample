@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/mainActivityButtonZone_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp"
+        >
+
+        <Button
+            android:id="@+id/mainActivityStartScan_BT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="scan"/>
+
+        <Button
+            android:id="@+id/mainActivityStopScan_BT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="stop"/>
+
+        <Button
+            android:id="@+id/mainActivityDisconnect_BT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="disconnect"/>
+
+        <Button
+            android:id="@+id/mainActivityDeleteLog_BT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DeleteLog"/>
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/mainActivityLogZone_ET"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mainActivityButtonZone_LL"
+        android:hint="log zone"
+        android:scrollbars="vertical"
+        android:textColor="@color/black"
+        android:gravity="top"
+        android:focusable="false"
+        />
+
+</RelativeLayout>
